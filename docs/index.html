@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://yassinebounana.com/">
 <meta property="og:image" content="https://yassinebounana.com/img/yassine-bounana.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://yassinebounana.com/#yassine", "name": "Yassine Bounana", "url": "https://yassinebounana.com/", "image": "https://yassinebounana.com/img/yassine-bounana.jpg", "jobTitle": "Founder, Media for Prospects LLC", "description": "Marketing strategist focused on authority-led marketing. Founder of Media for Prospects LLC and MFP Solutions, and host of The Moroccan Vault podcast.", "sameAs": ["https://www.linkedin.com/in/yassine-bounana/", "https://www.instagram.com/yassine.bounana/", "https://www.youtube.com/@Bounanayassine"], "worksFor": [{"@type": "Organization", "name": "Media for Prospects LLC", "url": "https://www.mediaforprospects.com"}, {"@type": "Organization", "name": "MFP Solutions", "url": "https://mediaforprospects.ma"}]}, {"@type": "WebSite", "@id": "https://yassinebounana.com/#website", "url": "https://yassinebounana.com/", "name": "Yassine Bounana", "publisher": {"@id": "https://yassinebounana.com/#yassine"}}, {"@type": "PodcastSeries", "name": "The Moroccan Vault", "url": "https://themoroccanvault.com", "author": {"@id": "https://yassinebounana.com/#yassine"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://yassinebounana.com/#yassine", "name": "Yassine Bounana", "url": "https://yassinebounana.com/", "image": "https://yassinebounana.com/img/yassine-bounana.jpg", "jobTitle": "Founder, Media for Prospects LLC", "description": "Marketing strategist focused on authority-led marketing. Founder of Media for Prospects LLC and MFP Solutions, and host of The Moroccan Vault podcast.", "sameAs": ["https://www.linkedin.com/in/yassine-bounana/", "https://www.instagram.com/yassine.bounana/", "https://www.youtube.com/@yassinebounana"], "worksFor": [{"@type": "Organization", "name": "Media for Prospects LLC", "url": "https://www.mediaforprospects.com"}, {"@type": "Organization", "name": "MFP Solutions", "url": "https://mediaforprospects.ma"}]}, {"@type": "WebSite", "@id": "https://yassinebounana.com/#website", "url": "https://yassinebounana.com/", "name": "Yassine Bounana", "publisher": {"@id": "https://yassinebounana.com/#yassine"}}, {"@type": "PodcastSeries", "name": "The Moroccan Vault", "url": "https://themoroccanvault.com", "author": {"@id": "https://yassinebounana.com/#yassine"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who is Yassine Bounana?", "acceptedAnswer": {"@type": "Answer", "text": "Yassine Bounana is a marketing strategist and the founder of Media for Prospects LLC, a growth studio that helps businesses build authority and turn it into leads and clients. He started as a freelance video editor and worked on thousands of videos. Most of his clients were business owners, not creators, and their videos disappeared because nobody had planned who should see them. That led him to build Media for Prospects. He also runs MFP Solutions, a production team in Morocco, and hosts The Moroccan Vault, a business podcast in English."}}, {"@type": "Question", "name": "What is Media for Prospects?", "acceptedAnswer": {"@type": "Answer", "text": "Media for Prospects LLC is a marketing company founded by Yassine Bounana. It helps businesses that sell products or services build authority in their market and turn it into leads, clients and revenue. The company uses YouTube as a search platform, and handles strategy, production, publishing and lead tracking as one system. Videos produced for its clients have generated more than 11 million views."}}, {"@type": "Question", "name": "What is MFP Solutions?", "acceptedAnswer": {"@type": "Answer", "text": "MFP Solutions is the Morocco-based team behind the production side of Media for Prospects. It handles video editing, motion graphics, publishing and channel operations, so brands get premium output at the pace a content engine needs."}}, {"@type": "Question", "name": "What is the best business podcast in English in Morocco?", "acceptedAnswer": {"@type": "Answer", "text": "We are biased, because Yassine hosts it, but the answer is The Moroccan Vault. It is a business podcast in English about starting, funding and running companies in Morocco. Most business content in Morocco is in French or Arabic, so The Moroccan Vault exists to make that knowledge available in English, through open conversations with founders, investors and experts. Guests have included a tax advisor, a venture capital investor, a value investor and a fintech co-founder, and every episode has a written article on the site."}}]}]}</script>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap">
 <style>
@@ -98,6 +98,17 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 26px}
 footer a{text-decoration:none}
 footer a:hover{color:#fff}
 
+.faq{background:var(--paper)}
+.faqlist{border-top:1px solid var(--ink)}
+.q{border-bottom:1px solid var(--line)}
+.q summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;font:600 clamp(18px,2vw,22px)/1.35 var(--head);letter-spacing:-.01em}
+.q summary::-webkit-details-marker{display:none}
+.q summary::after{content:"+";flex:none;font:400 28px/1 var(--body);color:var(--bronze-deep);transition:transform .2s}
+.q[open] summary::after{content:"\2212"}
+.q summary:hover{color:var(--bronze-deep)}
+.q summary:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}
+.q p{margin:0 0 28px;max-width:46em;color:#3A322B}
+.q p a{color:var(--bronze-deep);text-underline-offset:3px}
 @media (max-width:900px){
   .hero,.s-head,.row,.about .in,.contact .in{grid-template-columns:minmax(0,1fr);gap:36px}
   .hero{padding-block:44px 64px}
@@ -219,6 +230,16 @@ footer a:hover{color:#fff}
   </div>
 </section>
 
+<section class="s faq" id="faq">
+  <div class="wrap">
+    <div class="s-head">
+      <div><h2>Questions people ask.</h2></div>
+      <p>Short answers about me, my companies and the podcast.</p>
+    </div>
+    <div class="faqlist"><details class="q"><summary>Who is Yassine Bounana?</summary><p>Yassine Bounana is a marketing strategist and the founder of <a href="https://www.mediaforprospects.com">Media for Prospects LLC</a>, a growth studio that helps businesses build authority and turn it into leads and clients. He started as a freelance video editor and worked on thousands of videos. Most of his clients were business owners, not creators, and their videos disappeared because nobody had planned who should see them. That led him to build Media for Prospects. He also runs <a href="https://mediaforprospects.ma">MFP Solutions</a>, a production team in Morocco, and hosts <a href="https://themoroccanvault.com">The Moroccan Vault</a>, a business podcast in English.</p></details><details class="q"><summary>What is Media for Prospects?</summary><p><a href="https://www.mediaforprospects.com">Media for Prospects LLC</a> is a marketing company founded by Yassine Bounana. It helps businesses that sell products or services build authority in their market and turn it into leads, clients and revenue. The company uses YouTube as a search platform, and handles strategy, production, publishing and lead tracking as one system. Videos produced for its clients have generated more than 11 million views.</p></details><details class="q"><summary>What is MFP Solutions?</summary><p><a href="https://mediaforprospects.ma">MFP Solutions</a> is the Morocco-based team behind the production side of Media for Prospects. It handles video editing, motion graphics, publishing and channel operations, so brands get premium output at the pace a content engine needs.</p></details><details class="q"><summary>What is the best business podcast in English in Morocco?</summary><p>We are biased, because Yassine hosts it, but the answer is <a href="https://themoroccanvault.com">The Moroccan Vault</a>. It is a business podcast in English about starting, funding and running companies in Morocco. Most business content in Morocco is in French or Arabic, so The Moroccan Vault exists to make that knowledge available in English, through open conversations with founders, investors and experts. Guests have included a tax advisor, a venture capital investor, a value investor and a fintech co-founder, and every episode has a written article on the site.</p></details></div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="wrap in">
     <div>
@@ -240,7 +261,7 @@ footer a:hover{color:#fff}
     <nav>
       <a href="https://www.linkedin.com/in/yassine-bounana/">LinkedIn</a>
       <a href="https://www.instagram.com/yassine.bounana/">Instagram</a>
-      <a href="https://www.youtube.com/@Bounanayassine">YouTube</a>
+      <a href="https://www.youtube.com/@yassinebounana">YouTube</a>
       <a href="https://www.mediaforprospects.com">Media for Prospects</a>
       <a href="https://mediaforprospects.ma">MFP Solutions</a>
       <a href="https://themoroccanvault.com">The Moroccan Vault</a>
